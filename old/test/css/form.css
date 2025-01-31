@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+form .capcha.errore input, 
+form textarea.errore, 
+form  input.errore {
+	background: #F36;
+	color: #FFF;
+}
+
+.errore
+{
+	background: #F36;
+	color: #FFF;
+}
