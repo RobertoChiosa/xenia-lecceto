@@ -15,8 +15,8 @@
     </h4>
     <h4>
       Telefono
-      <a href="tel:+393496000000" class="text-blue-400">
-        +39 349 600 0000
+      <a href="tel:+39 39 396 236 18" class="text-blue-400">
+        +39 39 396 236 18
       </a>
     </h4>
 
