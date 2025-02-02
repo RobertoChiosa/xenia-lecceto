@@ -3,7 +3,9 @@ interface Props {
   title: string;
   text: string;
   cta_primary: string;
+  cta_link_primary?: string;
   cta_secondary: string;
+  cta_link_secondary?: string;
   img_path: string;
 }
 
@@ -28,7 +30,7 @@ defineProps<Props>()
             <a class="btn btn-primary" :href="cta_link_primary">{{
                 cta_primary
               }}</a>
-            <a class="btn btn-outline-secondary" :href="cta_link">{{
+            <a class="btn btn-outline-secondary" :href="cta_link_secondary">{{
                 cta_secondary
               }}</a>
           </div>
