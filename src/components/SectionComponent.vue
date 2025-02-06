@@ -7,14 +7,15 @@ interface Props {
   body: string;
   cta?: string;
   img: string;
+  light?: boolean;
 }
 
 defineProps<Props>()
 </script>
 
 <template>
-  <section class="py-5 border-bottom" id="{{section_id}}">
-    <div class="container px-5 my-5">
+  <section class="py-5 border-bottom" :class="{ 'bg-light': light }" :id="section_id">
+    <div class="container px-5 my-5 px-5">
       <div class="mt-16 grid gap-8 md:grid-cols-3">
         <div class="row featurette gap-4 d-flex">
           <div class="col-md-7 flex-shrink-0">
@@ -24,8 +25,9 @@ defineProps<Props>()
             <h2 class="featurette-heading"></h2>
             <h2 class="fw-bolder">{{ title }}</h2>
             <p>{{ body }}</p>
-            <a v-if="cta" class="btn btn-primary text-white btn-md px-4 me-sm-3" href="#apartments">Prenota</a>
-            <a class="btn btn-tertiary btn-md px-4">Contattaci</a>
+            <a v-if="cta" class="btn btn-dark text-white btn-md px-4 me-sm-3" href="#apartments">Scopri</a>
+            <a class="btn btn-tertiary btn-md px-4"
+               href="mailto:cdlit13@gmail.com?subject=Richiesta informazione">Contattaci</a>
 
           </div>
           <div class="col-md-4 img-service flex-shrink-0">
@@ -37,6 +39,7 @@ defineProps<Props>()
         </div>
       </div>
     </div>
+
   </section>
 </template>
 

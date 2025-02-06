@@ -10,6 +10,7 @@ interface Props {
   cta_secondary: string;
   cta_link_secondary?: string;
   img_path: string;
+  people: number;
 }
 
 const props = defineProps<Props>()
@@ -43,14 +44,17 @@ const navigateToPrimary = () => {
         </p>
         <div class="d-flex justify-content-between align-items-center">
           <div class="btn-group">
-            <a class="btn btn-primary" :href="cta_link_primary" @click.stop>{{
+            <a class="btn btn-dark" :href="cta_link_primary" @click.stop>{{
                 cta_primary
               }}</a>
             <a class="btn btn-outline-secondary" :href="cta_link_secondary" @click.stop>{{
                 cta_secondary
               }}</a>
           </div>
-          <small class="text-muted">Up to 8 people</small>
+          <small class="text-muted">
+            <i class="bi bi-people-fill"></i> {{ people }}
+          </small>
+
         </div>
       </div>
     </div>
@@ -74,9 +78,7 @@ const navigateToPrimary = () => {
 }
 
 .read-more {
-  color: #007bff;
   cursor: pointer;
-  font-weight: bold;
   margin-left: 5px;
 }
 

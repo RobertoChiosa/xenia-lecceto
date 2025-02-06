@@ -6,7 +6,7 @@ import LanguageSelector from '@/components/LanguageSelector.vue'
   <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
     <div class="container px-5">
       <a class="navbar-brand" href="/">
-        La Casa del Lecceto
+        Casa del Lecceto
       </a>
       <button
         class="navbar-toggler"
