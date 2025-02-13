@@ -18,10 +18,10 @@ const apartments: Record<string, Apartment> = {
     title: 'Trilocale Erica con piscina',
     subtitle: 'Intero trilocale - 38 m²',
     images: [
-      '/photos/appartamenti/erica/bagno.jpg',
-      '/photos/appartamenti/erica/camera.jpg',
-      '/photos/appartamenti/erica/camera2.jpg',
-      '/photos/appartamenti/erica/sala.jpg'
+      '/photos/erica/1.jpg',
+      '/photos/erica/2.jpg',
+      '/photos/erica/3.jpg',
+      '/photos/erica/4.jpg'
     ]
   },
   iris: {
@@ -29,11 +29,11 @@ const apartments: Record<string, Apartment> = {
     title: 'Monolocale Iris con piscina',
     subtitle: 'Intero monolocale - 38 m²',
     images: [
-      '/photos/appartamenti/iris/bagno.jpg',
-      '/photos/appartamenti/iris/camera.jpg',
-      '/photos/appartamenti/iris/ingresso.jpg',
-      '/photos/appartamenti/iris/sala.jpg',
-      '/photos/appartamenti/iris/sala2.jpg'
+      '/photos/iris/1.jpg',
+      '/photos/iris/2.jpg',
+      '/photos/iris/3.jpg',
+      '/photos/iris/4.jpg',
+      '/photos/iris/5.jpg'
     ]
   },
   rosa: {
@@ -41,11 +41,12 @@ const apartments: Record<string, Apartment> = {
     title: 'Quadrilocale Rosa con piscina',
     subtitle: 'Intero appartamento - 60 m²',
     images: [
-      '/photos/appartamenti/rosa/bagno2.jpg',
-      '/photos/appartamenti/rosa/camera.jpg',
-      '/photos/appartamenti/rosa/sala.jpg',
-      '/photos/appartamenti/rosa/sala2.jpg',
-      '/photos/appartamenti/rosa/sala3.jpg'
+      '/photos/rosa/1.jpg',
+      '/photos/rosa/2.jpg',
+      '/photos/rosa/3.jpg',
+      '/photos/rosa/4.jpg',
+      '/photos/rosa/5.jpg',
+      '/photos/rosa/6.jpg'
     ]
   },
   viola: {
@@ -53,10 +54,12 @@ const apartments: Record<string, Apartment> = {
     title: 'Quadrilocale Viola con piscina',
     subtitle: 'Intero monolocale - 38 m²',
     images: [
-      '/photos/appartamenti/viola/bagno.jpg',
-      '/photos/appartamenti/viola/camera.jpg',
-      '/photos/appartamenti/viola/cucina.jpg',
-      '/photos/appartamenti/viola/sala.jpg'
+      '/photos/viola/1.jpg',
+      '/photos/viola/2.jpg',
+      '/photos/viola/3.jpg',
+      '/photos/viola/4.jpg',
+      '/photos/viola/5.jpg',
+      '/photos/viola/6.jpg'
     ]
   }
 }

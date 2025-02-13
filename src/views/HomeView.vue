@@ -25,7 +25,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
           cta_primary="Scopri di più"
           cta_link_primary="apartments/erica"
           cta_secondary="Prenota"
-          img_path='/photos/appartamenti/erica/camera.jpg'
+          img_path='/photos/erica/1.jpg'
           :people=6
         />
         <PropertyComponent
@@ -34,7 +34,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
           cta_primary="Scopri di più"
           cta_link_primary="apartments/iris"
           cta_secondary="Prenota"
-          img_path='/photos/appartamenti/iris/camera.jpg'
+          img_path='/photos/iris/1.jpg'
           :people=2
         />
         <PropertyComponent
@@ -43,7 +43,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
           cta_primary="Scopri di più"
           cta_link_primary="apartments/rosa"
           cta_secondary="Prenota"
-          img_path='/photos/appartamenti/rosa/camera.jpg'
+          img_path='/photos/rosa/1.jpg'
           :people=4
         />
         <PropertyComponent
@@ -52,7 +52,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
           cta_primary="Scopri di più"
           cta_link_primary="apartments/viola"
           cta_secondary="Prenota"
-          img_path='/photos/appartamenti/viola/camera.jpg'
+          img_path='/photos/viola/1.jpg'
           :people=6
         />
       </div>
@@ -89,7 +89,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
       section_id="us"
       header="Nelle vicinanze"
       title="Scopri il patrimonio storico e culturale"
-      body="Nelle immediate vicinanze ci sono le Terme del Calidario e le Terme Valle del Sole. La posizione di Casa del Lecceto permette di raggiungere agevolmente anche le principali località storiche e turistiche della Toscana, dai vicini borghi di Campiglia Marittima e Suvereto alle cittadine di Volterra, Massa Marittima e San Gimignano fino alle città di Pisa, Siena e Firenze."
+      body="Nelle immediate vicinanze ci sono le Terme di venturina e il Calidario. La posizione di Casa del Lecceto permette di raggiungere agevolmente anche le principali località storiche e turistiche della Toscana, dai vicini borghi di Campiglia Marittima e Suvereto alle cittadine di Volterra, Massa Marittima e San Gimignano fino alle città di Pisa, Siena e Firenze  e in 15' Piombino con l'imbarco per l'isola d'Elba."
       cta="Prenota"
       img="/photos/campiglia.jpg"
     />
