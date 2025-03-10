@@ -7,90 +7,92 @@ import SectionComponent from '@/components/SectionComponent.vue'
 
 <template>
   <HeaderComponent
-    title="Casa del Lecceto"
-    subtititle="La tua vacanza nella campagna toscana"
-    cta_primary="Scopri di più"
-    cta_secondary="Esplora"
+    :title="$t('home:header-title')"
+    :subtititle="$t('home:header-subtitle')"
+    :cta_primary="$t('home:header-cta-primary')"
+    :cta_secondary="$t('home:header-cta-secondary')"
   />
   <section class="py-5 border-bottom" id="apartments">
     <div class="container px-5 my-5 px-5">
       <div class="text-center mb-5">
-        <h2 class="fw-bolder">Le nostre strutture</h2>
-        <p class="lead mb-0">Scopri e prenota nelle nostre strutture</p>
+        <h2 class="fw-bolder">{{ $t('home:apartments-title') }}</h2>
+        <p class="lead mb-0">{{ $t('home:apartments-subtitle') }}</p>
       </div>
       <div class="row gy-4 justify-content-center">
         <PropertyComponent
-          title="Trilocale Erica con piscina"
-          text=""
-          cta_primary="Scopri di più"
+          :title="$t('common:property-erica-title')"
+          :text="$t('common:property-erica-text')"
+          :cta_primary="$t('common:discover-more')"
           cta_link_primary="apartments/erica"
-          cta_secondary="Prenota"
+          :cta_secondary="$t('common:book-now')"
           img_path='/photos/erica/1.jpg'
           :people=6
         />
         <PropertyComponent
-          title='Monolocale Iris con piscina'
-          text=""
-          cta_primary="Scopri di più"
+          :title="$t('common:property-iris-title')"
+          :text="$t('common:property-iris-text')"
+          :cta_primary="$t('common:discover-more')"
           cta_link_primary="apartments/iris"
-          cta_secondary="Prenota"
+          :cta_secondary="$t('common:book-now')"
           img_path='/photos/iris/1.jpg'
           :people=2
         />
         <PropertyComponent
-          title='Quadrilocale Rosa con piscina'
-          text=""
-          cta_primary="Scopri di più"
+          :title="$t('common:property-rosa-title')"
+          :text="$t('common:property-rosa-text')"
+          :cta_primary="$t('common:discover-more')"
           cta_link_primary="apartments/rosa"
-          cta_secondary="Prenota"
+          :cta_secondary="$t('common:book-now')"
           img_path='/photos/rosa/1.jpg'
           :people=4
         />
         <PropertyComponent
-          title='Quadrilocale Viola con piscina'
-          text=""
-          cta_primary="Scopri di più"
+          :title="$t('common:property-viola-title')"
+          :text="$t('common:property-viola-text')"
+          :cta_primary="$t('common:discover-more')"
           cta_link_primary="apartments/viola"
-          cta_secondary="Prenota"
+          :cta_secondary="$t('common:book-now')"
           img_path='/photos/viola/1.jpg'
           :people=6
         />
+
+
       </div>
     </div>
   </section>
   <section id="discover">
     <SectionComponent
       section_id="us"
-      header="La proprietà"
-      title="La tua vacanza nella campagna toscana"
-      body="La residenza Casa del Lecceto nasce all'interno di una villa padronale ottocentesca, ristrutturata con arredi in stile toscano per dar vita ad un luogo unico di relax. Animali da cortile e cavalli completano l'accoglienza degli amici che vorranno trascorrere le loro vacanze in questa grande casa di campagna."
-      cta="Prenota"
+      :header="$t('home:discover-property-header')"
+      :title="$t('home:discover-property-title')"
+      :body="$t('home:discover-property-body')"
+      :cta="$t('home:discover-property-cta')"
       img="/photos/lecceto-villa.jpg"
       :light="true"
     />
     <SectionComponent
       section_id="us"
-      header="Gli appartamenti"
-      title="Comodità e relax"
-      body="Con tre grandi appartamenti, uno spazioso monolocale ed una piscina di 128mq a disposizione degli ospiti, Casa del Lecceto è la dimora ideale per una permanenza che sappia coniugare riposo ed escursione, mare e collina, comfort e contatto con la natura."
-      cta="Prenota"
+      :header="$t('home:discover-apartments-header')"
+      :title="$t('home:discover-apartments-title')"
+      :body="$t('home:discover-apartments-body')"
+      :cta="$t('home:discover-apartments-cta')"
       img="/photos/lecceto-piscina.jpg"
     />
     <SectionComponent
       section_id="us"
-      header="Nelle vicinanze"
-      title="La costa degli etruschi"
-      body="Situata a circa 1 km dal paese di Venturina Terme, la residenza dista pochi minuti in auto dalla Costa degli Etruschi, con il parco e il mare di Rimigliano, il golfo di Baratti e Populonia, Piombino e gli imbarchi per l'isola d'Elba."
-      cta="Prenota"
+      :header="$t('home:discover-nearby-header')"
+      :title="$t('home:discover-nearby-title')"
+      :body="$t('home:discover-nearby-body')"
+      :cta="$t('home:discover-nearby-cta')"
       img="/photos/piombino.jpg"
       :light="true"
     />
     <SectionComponent
       section_id="us"
-      header="Nelle vicinanze"
-      title="Scopri il patrimonio storico e culturale"
-      body="Nelle immediate vicinanze ci sono le Terme di venturina e il Calidario. La posizione di Casa del Lecceto permette di raggiungere agevolmente anche le principali località storiche e turistiche della Toscana, dai vicini borghi di Campiglia Marittima e Suvereto alle cittadine di Volterra, Massa Marittima e San Gimignano fino alle città di Pisa, Siena e Firenze  e in 15' Piombino con l'imbarco per l'isola d'Elba."
-      cta="Prenota"
+      :header="$t('home:discover-history-header')"
+      :title="$t('home:discover-history-title')"
+      :body="$t('home:discover-history-body')"
+      :cta="$t('home:discover-history-cta')"
       img="/photos/campiglia.jpg"
     />
   </section>
@@ -104,16 +106,16 @@ import SectionComponent from '@/components/SectionComponent.vue'
       </div>
       <div class="row justify-content-center">
         <TestimonialComponent
-          signature="Delia, Luglio 2024"
-          text="La tranquillità del luogo in mezzo agli ulivi pur essendo vicino a tutti i servizi , la gentilezza e la cordialità dei proprietari, l' appartamento funzionale e molto pulito e la piscina , gradita molto dai bambini."
+          :signature="$t('home:testimonial-1-signature')"
+          :text="$t('home:testimonial-1-text')"
         />
         <TestimonialComponent
-          signature="- Marco, Agosto 2024"
-          text="È una tipica e bellissima casa toscana, molto pulita e curata. La posizione stupenda, immersa nella natura e a due passi dal mare. Relax assicurato e piscina top!"
+          :signature="$t('home:testimonial-2-signature')"
+          :text="$t('home:testimonial-2-text')"
         />
         <TestimonialComponent
-          signature="- Jessica, Ottobre 2024"
-          text="Il casale ha un'ottima posizione e il sig. Sergio è stato molto accogliente. Letto molto comodo, abbiamo dormito benissimo e parcheggio davanti alla porta d'ingresso. La nostra cagnolina è stata ben accolta. Ci ritorneremo."
+          :signature="$t('home:testimonial-3-signature')"
+          :text="$t('home:testimonial-3-text')"
         />
       </div>
     </div>

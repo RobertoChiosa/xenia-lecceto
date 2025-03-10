@@ -3,20 +3,23 @@ import { computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import ApartmentComponent from '@/components/ApartmentComponent.vue'
 
+
 // Define the Apartment type
 interface Apartment {
   id_smoobu: number
-  title: string
-  subtitle: string
+  titleKey: string
+  bodyKey: string
+  descriptionKey: string
   images: string[]
 }
 
-// Define the apartment data
+// Define the apartment data using translation keys
 const apartments: Record<string, Apartment> = {
   erica: {
     id_smoobu: 2066233,
-    title: 'Trilocale Erica con piscina',
-    subtitle: 'Intero trilocale - 38 m²',
+    titleKey: 'common:property-erica-title',
+    bodyKey: 'common:property-erica-text',
+    descriptionKey: 'common:property-erica-description',
     images: [
       '/photos/erica/1.jpg',
       '/photos/erica/2.jpg',
@@ -26,8 +29,9 @@ const apartments: Record<string, Apartment> = {
   },
   iris: {
     id_smoobu: 2066263,
-    title: 'Monolocale Iris con piscina',
-    subtitle: 'Intero monolocale - 38 m²',
+    titleKey: 'common:property-iris-title',
+    bodyKey: 'common:property-iris-text',
+    descriptionKey: 'common:property-iris-description',
     images: [
       '/photos/iris/1.jpg',
       '/photos/iris/2.jpg',
@@ -38,8 +42,9 @@ const apartments: Record<string, Apartment> = {
   },
   rosa: {
     id_smoobu: 2066353,
-    title: 'Quadrilocale Rosa con piscina',
-    subtitle: 'Intero appartamento - 60 m²',
+    titleKey: 'common:property-rosa-title',
+    bodyKey: 'common:property-rosa-text',
+    descriptionKey: 'common:property-rosa-description',
     images: [
       '/photos/rosa/1.jpg',
       '/photos/rosa/2.jpg',
@@ -51,8 +56,9 @@ const apartments: Record<string, Apartment> = {
   },
   viola: {
     id_smoobu: 2066266,
-    title: 'Quadrilocale Viola con piscina',
-    subtitle: 'Intero monolocale - 38 m²',
+    titleKey: 'common:property-viola-title',
+    bodyKey: 'common:property-viola-text',
+    descriptionKey: 'common:property-viola-description',
     images: [
       '/photos/viola/1.jpg',
       '/photos/viola/2.jpg',
@@ -81,11 +87,12 @@ onMounted(() => {
   <div v-if="apartmentData">
     <ApartmentComponent
       :id_smoobu="apartmentData.id_smoobu"
-      :title="apartmentData.title"
-      :subtitle="apartmentData.subtitle"
+      :title="$t(apartmentData.titleKey)"
+      :body="$t(apartmentData.bodyKey)"
+      :description="$t(apartmentData.descriptionKey)"
       :images="apartmentData.images" />
   </div>
   <div v-else>
-    <p>Apartment not found.</p>
+    <p>{{ $t('common:apartment-not-found') }}</p>
   </div>
 </template>

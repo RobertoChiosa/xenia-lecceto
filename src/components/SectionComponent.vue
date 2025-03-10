@@ -25,9 +25,11 @@ defineProps<Props>()
             <h2 class="featurette-heading"></h2>
             <h2 class="fw-bolder">{{ title }}</h2>
             <p>{{ body }}</p>
-            <a v-if="cta" class="btn btn-dark text-white btn-md px-4 me-sm-3" href="#apartments">Scopri</a>
+            <a v-if="cta" class="btn btn-dark text-white btn-md px-4 me-sm-3"
+               href="#apartments">{{ $t('common:discover-more') }}</a>
             <a class="btn btn-tertiary btn-md px-4"
-               href="mailto:cdlit13@gmail.com?subject=Richiesta informazione">Contattaci</a>
+               href="mailto:cdlit13@gmail.com?subject=Richiesta informazione">{{ $t('common:contact-us')
+              }}</a>
 
           </div>
           <div class="col-md-4 img-service flex-shrink-0">
