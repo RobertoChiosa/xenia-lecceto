@@ -3,6 +3,7 @@ import HeaderComponent from '@/components/HeaderComponent.vue'
 import TestimonialComponent from '@/components/TestimonialComponent.vue'
 import PropertyComponent from '@/components/ApartmentPreviewComponent.vue'
 import SectionComponent from '@/components/SectionComponent.vue'
+import MapComponent from '@/components/MapComponent.vue'
 </script>
 
 <template>
@@ -12,6 +13,25 @@ import SectionComponent from '@/components/SectionComponent.vue'
     :cta_primary="$t('home:header-cta-primary')"
     :cta_secondary="$t('home:header-cta-secondary')"
   />
+  <section id="discover">
+    <SectionComponent
+      section_id="us"
+      :header="$t('home:discover-property-header')"
+      :title="$t('home:discover-property-title')"
+      :body="$t('home:discover-property-body')"
+      :cta="$t('home:discover-property-cta')"
+      img="/photos/lecceto-villa.jpg"
+    />
+    <SectionComponent
+      section_id="us"
+      :header="$t('home:discover-apartments-header')"
+      :title="$t('home:discover-apartments-title')"
+      :body="$t('home:discover-apartments-body')"
+      :cta="$t('home:discover-apartments-cta')"
+      img="/photos/lecceto-piscina.jpg"
+      :light="true"
+    />
+  </section>
   <section class="py-5 border-bottom" id="apartments">
     <div class="container px-5 my-5 px-5">
       <div class="text-center mb-5">
@@ -60,24 +80,7 @@ import SectionComponent from '@/components/SectionComponent.vue'
       </div>
     </div>
   </section>
-  <section id="discover">
-    <SectionComponent
-      section_id="us"
-      :header="$t('home:discover-property-header')"
-      :title="$t('home:discover-property-title')"
-      :body="$t('home:discover-property-body')"
-      :cta="$t('home:discover-property-cta')"
-      img="/photos/lecceto-villa.jpg"
-      :light="true"
-    />
-    <SectionComponent
-      section_id="us"
-      :header="$t('home:discover-apartments-header')"
-      :title="$t('home:discover-apartments-title')"
-      :body="$t('home:discover-apartments-body')"
-      :cta="$t('home:discover-apartments-cta')"
-      img="/photos/lecceto-piscina.jpg"
-    />
+  <section id="discover2">
     <SectionComponent
       section_id="us"
       :header="$t('home:discover-nearby-header')"
@@ -121,5 +124,13 @@ import SectionComponent from '@/components/SectionComponent.vue'
     </div>
   </section>
   <section class="py-5 border-bottom" id="map">
+    <div class="text-center mb-5">
+      <h2 class="fw-bolder">{{ $t('home:map-title') }}</h2>
+      <p class="lead mb-0">{{ $t('home:map-subtitle') }}</p>
+    </div>
+    <div class="row justify-content-center">
+      <MapComponent />
+    </div>
   </section>
+
 </template>
