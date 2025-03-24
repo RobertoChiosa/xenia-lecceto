@@ -35,7 +35,7 @@ const navigateToPrimary = () => {
     <div class="card mb-xl-0 card-hover" @click="navigateToPrimary">
       <img class="card-img-top" :src="img_path" alt="Card image" />
       <div class="card-body text-dark">
-        <h5 class="card-title">{{ title }}</h5>
+        <h5 class="card-title hobo">{{ title }}</h5>
         <p class="card-text">
           {{ displayText() }}
           <span v-if="!expanded" class="read-more" @click.stop="expanded = true">
@@ -84,5 +84,10 @@ const navigateToPrimary = () => {
 
 .read-more:hover {
   text-decoration: underline;
+}
+
+
+.hobo {
+  font-family: 'Hobo', sans-serif;
 }
 </style>

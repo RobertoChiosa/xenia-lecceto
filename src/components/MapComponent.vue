@@ -12,9 +12,9 @@ import L, { Map } from 'leaflet'
 const mapContainer = ref<HTMLDivElement | null>(null)
 let map: Map | null = null
 
-const latitude = 43.0366573387094
-const longitude = 10.612682061007881
-const zoom = 13
+const latitude = 43.03620026352828
+const longitude = 10.613182785878262
+const zoom = 16
 
 onMounted(() => {
   if (mapContainer.value) {

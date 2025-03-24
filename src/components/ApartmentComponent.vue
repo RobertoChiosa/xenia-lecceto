@@ -42,7 +42,7 @@ onMounted(() => {
 <template>
   <div class="container my-5 py-5 text-center">
     <div class="text-center mb-4">
-      <h2 class="fw-bold text-uppercase">{{ props.title }}</h2>
+      <h2 class="fw-bold text-uppercase hobo">{{ props.title }}</h2>
       <!--      <p class="text-muted">{{ props.body }}</p>-->
     </div>
 
@@ -106,3 +106,13 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.carousel {
+  max-height: 700px;
+}
+
+.hobo {
+  font-family: 'Hobo', sans-serif;
+}
+</style>

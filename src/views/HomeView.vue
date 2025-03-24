@@ -35,7 +35,7 @@ import MapComponent from '@/components/MapComponent.vue'
   <section class="py-5 border-bottom" id="apartments">
     <div class="container px-5 my-5 px-5">
       <div class="text-center mb-5">
-        <h2 class="fw-bolder">{{ $t('home:apartments-title') }}</h2>
+        <h2 class="fw-bolder hobo">{{ $t('home:apartments-title') }}</h2>
         <p class="lead mb-0">{{ $t('home:apartments-subtitle') }}</p>
       </div>
       <div class="row gy-4 justify-content-center">
@@ -104,7 +104,7 @@ import MapComponent from '@/components/MapComponent.vue'
   <section class="py-5 border-bottom bg-light" id="testimonials">
     <div class="container px-5 my-5 px-5">
       <div class="text-center mb-5">
-        <h2 class="fw-bolder">{{ $t('home:testimonials-title') }}</h2>
+        <h2 class="fw-bolder hobo">{{ $t('home:testimonials-title') }}</h2>
         <p class="lead mb-0">{{ $t('home:testimonials-subtitle') }}</p>
       </div>
       <div class="row justify-content-center">
@@ -125,7 +125,7 @@ import MapComponent from '@/components/MapComponent.vue'
   </section>
   <section class="py-5 border-bottom" id="map">
     <div class="text-center mb-5">
-      <h2 class="fw-bolder">{{ $t('home:map-title') }}</h2>
+      <h2 class="fw-bolder hobo">{{ $t('home:map-title') }}</h2>
       <p class="lead mb-0">{{ $t('home:map-subtitle') }}</p>
     </div>
     <div class="row justify-content-center">
@@ -134,3 +134,10 @@ import MapComponent from '@/components/MapComponent.vue'
   </section>
 
 </template>
+
+<style scoped>
+.hobo {
+  font-family: 'Hobo', sans-serif;
+  font-size: 2.5rem;
+}
+</style>

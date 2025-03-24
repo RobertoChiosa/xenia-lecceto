@@ -23,7 +23,7 @@ defineProps<Props>()
               {{ header }}
             </span>
             <h2 class="featurette-heading"></h2>
-            <h2 class="fw-bolder">{{ title }}</h2>
+            <h2 class="fw-bolder h2">{{ title }}</h2>
             <p>{{ body }}</p>
             <a v-if="cta" class="btn btn-dark text-white btn-md px-4 me-sm-3"
                href="#apartments">{{ $t('common:discover-more') }}</a>
@@ -67,5 +67,9 @@ defineProps<Props>()
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.05rem;
+}
+
+.h2 {
+  font-family: 'Hobo', sans-serif;
 }
 </style>
